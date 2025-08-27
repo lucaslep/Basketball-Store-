@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basketball Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">🏀 Basketball Store</h1>
+      <br>
+      <ul class="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#products">Produtos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section id="home" class="banner">
+    <h2>🏀 Bem-vindo à Basketball Store</h2>
+    <p>Encontre camisetas, regatas e tênis exclusivos.</p>
+    <a href="#products" class="btn">Ver Produtos</a>
+  </section>
+
+  <!-- Produtos -->
+  <section id="products" class="products">
+    <h2>Produtos em Destaque</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="img/Lakers.png" alt="Bola de Basquete">
+        <h3>Regata Lakers</h3>
+        <p>R$ 199,90</p>
+      </div>
+      <div class="product-card">
+        <img src="img/Shorts.png" alt="Camisa de Time">
+        <h3>Shorts Lakers</h3>
+        <p>R$ 299,90</p>
+      </div>
+      <div class="product-card">
+        <img src="img/Lebron.png" alt="Tênis de Basquete">
+        <h3>Lebron Witness 7</h3>
+        <p>R$ 1200,00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contact" class="contact">
+    <h2>Fale Conosco</h2>
+    <form onsubmit="enviarWhats(event)">
+      <input type="text" id="nome" placeholder="Seu Nome" required>
+      <input type="email" id="email" placeholder="Seu Email" required>
+      <textarea id="mensagem" placeholder="Sua Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 LojaBasket - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
